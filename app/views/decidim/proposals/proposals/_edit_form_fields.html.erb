@@ -4,10 +4,6 @@
   <%= form.text_field :title, class: "js-hashtags", value: form_presenter.title %>
 </div>
 
-<div class="field hashtags__container">
-  <%= text_editor_for_proposal_body(form) %>
-</div>
-
 <% if @form.component_automatic_hashtags.any? %>
   <div class="field">
     <%= form.label :automatic_hashtags %>
@@ -113,3 +109,7 @@
     </div>
   </fieldset>
 <% end %>
+
+<div class="field hashtags__container">
+  <%= text_editor_for_proposal_body(form) %>
+</div>
